@@ -32,10 +32,10 @@
     <xs:sequence>
       <xs:element type="xs:string" name="name"/>
       <xs:element type="xs:string" name="desc"/>
-      <xs:element type="ors:authorType" name="author" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
-      <xs:element type="ors:copyrightType" name="copyright" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
+      <xs:element type="ors:authorType" name="author" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v2/ors-gpx.xsd"/>
+      <xs:element type="ors:copyrightType" name="copyright" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v2/ors-gpx.xsd"/>
       <xs:element type="xs:string" name="time"/>
-      <xs:element type="ors:boundsType" name="bounds" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
+      <xs:element type="ors:boundsType" name="bounds" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v2/ors-gpx.xsd"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="boundsType">
@@ -57,9 +57,9 @@
   </xs:complexType>
   <xs:complexType name="gpxType">
     <xs:sequence>
-      <xs:element type="ors:metadataType" name="metadata" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
-      <xs:element type="ors:rteType" name="rte" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
-      <xs:element type="ors:extensionsType" name="extensions" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
+      <xs:element type="ors:metadataType" name="metadata" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v2/ors-gpx.xsd"/>
+      <xs:element type="ors:rteType" name="rte" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v2/ors-gpx.xsd"/>
+      <xs:element type="ors:extensionsType" name="extensions" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v2/ors-gpx.xsd"/>
     </xs:sequence>
     <xs:attribute type="xs:string" name="version"/>
     <xs:attribute type="xs:string" name="creator"/>
@@ -75,8 +75,8 @@
   <xs:complexType name="authorType">
     <xs:sequence>
       <xs:element type="xs:string" name="name"/>
-      <xs:element type="ors:emailType" name="email" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
-      <xs:element type="ors:linkType" name="link" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
+      <xs:element type="ors:emailType" name="email" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v2/ors-gpx.xsd"/>
+      <xs:element type="ors:linkType" name="link" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v2/ors-gpx.xsd"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="copyrightType">
@@ -91,15 +91,15 @@
       <xs:element type="xs:decimal" name="ele" minOccurs="0"/>
       <xs:element type="xs:string" name="name"/>
       <xs:element type="xs:string" name="desc"/>
-      <xs:element type="ors:extensionsType" name="extensions" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
+      <xs:element type="ors:extensionsType" name="extensions" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v2/ors-gpx.xsd"/>
     </xs:sequence>
     <xs:attribute type="xs:string" name="lat" use="optional"/>
     <xs:attribute type="xs:string" name="lon" use="optional"/>
   </xs:complexType>
   <xs:complexType name="rteType">
     <xs:sequence>
-      <xs:element type="ors:rteptType" name="rtept" maxOccurs="unbounded" minOccurs="0" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
-      <xs:element type="ors:extensionsType" name="extensions" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
+      <xs:element type="ors:rteptType" name="rtept" maxOccurs="unbounded" minOccurs="0" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v2/ors-gpx.xsd"/>
+      <xs:element type="ors:extensionsType" name="extensions" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v2/ors-gpx.xsd"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>
