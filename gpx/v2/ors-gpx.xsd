@@ -8,7 +8,18 @@
       <xs:element name="type" minOccurs="0">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="[0-9][0-9][0-9]"/>
+              <xs:enumeration value="0"/>
+              <xs:enumeration value="1"/>
+              <xs:enumeration value="2"/>
+              <xs:enumeration value="3"/>
+              <xs:enumeration value="4"/>
+              <xs:enumeration value="5"/>
+              <xs:enumeration value="6"/>
+              <xs:enumeration value="7"/>
+              <xs:enumeration value="8"/>
+              <xs:enumeration value="9"/>
+              <xs:enumeration value="10"/>
+              <xs:enumeration value="11"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -26,6 +37,8 @@
       <xs:element type="xs:string" name="distance-units" minOccurs="0"/>
       <xs:element type="xs:string" name="instructions" minOccurs="0"/>
       <xs:element type="xs:string" name="elevation" minOccurs="0"/>
+      <xs:element type="ors:boundsType" name="bounds" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
+</xs:sequence>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="metadataType">
