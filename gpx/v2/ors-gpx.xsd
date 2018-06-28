@@ -88,7 +88,7 @@
   </xs:complexType>
   <xs:complexType name="rteptType">
     <xs:sequence>
-      <xs:element type="xs:decimal" name="elevation" minOccurs="0"/>
+      <xs:element type="xs:decimal" name="ele" minOccurs="0"/>
       <xs:element type="xs:string" name="name"/>
       <xs:element type="xs:string" name="desc"/>
       <xs:element type="ors:extensionsType" name="extensions" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
