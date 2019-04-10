@@ -20,6 +20,8 @@
               <xs:enumeration value="9"/>
               <xs:enumeration value="10"/>
               <xs:enumeration value="11"/>
+              <xs:enumeration value="12"/>
+              <xs:enumeration value="13"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -27,7 +29,7 @@
       <xs:element type="xs:string" name="distanceActual" minOccurs="0"/>
       <xs:element type="xs:string" name="ascent" minOccurs="0"/>
       <xs:element type="xs:string" name="descent" minOccurs="0"/>
-      <xs:element type="xs:string" name="avgSpeed" minOccurs="0"/>
+      <xs:element type="xs:string" name="avgspeed" minOccurs="0"/>
       <xs:element type="xs:string" name="attribution" minOccurs="0"/>
       <xs:element type="xs:string" name="engine" minOccurs="0"/>
       <xs:element type="xs:string" name="build_date" minOccurs="0"/>
@@ -37,7 +39,7 @@
       <xs:element type="xs:string" name="distance-units" minOccurs="0"/>
       <xs:element type="xs:string" name="instructions" minOccurs="0"/>
       <xs:element type="xs:string" name="elevation" minOccurs="0"/>
-      <xs:element type="ors:boundsType" name="bounds" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v2/ors-gpx.xsd"/>
+      <xs:element type="ors:boundsType" name="bounds" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v2/ors-gpx.xsd" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="metadataType">
@@ -53,10 +55,10 @@
   <xs:complexType name="boundsType">
     <xs:simpleContent>
       <xs:extension base="xs:string">
-        <xs:attribute type="xs:string" name="minlat"/>
-        <xs:attribute type="xs:string" name="minlon"/>
-        <xs:attribute type="xs:string" name="maxlat"/>
-        <xs:attribute type="xs:string" name="maxlon"/>
+        <xs:attribute type="xs:string" name="minLat"/>
+        <xs:attribute type="xs:string" name="minLon"/>
+        <xs:attribute type="xs:string" name="maxLat"/>
+        <xs:attribute type="xs:string" name="maxLon"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
