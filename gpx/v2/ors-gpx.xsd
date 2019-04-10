@@ -37,8 +37,7 @@
       <xs:element type="xs:string" name="distance-units" minOccurs="0"/>
       <xs:element type="xs:string" name="instructions" minOccurs="0"/>
       <xs:element type="xs:string" name="elevation" minOccurs="0"/>
-      <xs:element type="ors:boundsType" name="bounds" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
-</xs:sequence>
+      <xs:element type="ors:boundsType" name="bounds" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v2/ors-gpx.xsd"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="metadataType">
