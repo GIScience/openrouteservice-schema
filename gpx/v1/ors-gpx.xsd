@@ -37,6 +37,7 @@
       <xs:element type="xs:string" name="distance-units" minOccurs="0"/>
       <xs:element type="xs:string" name="instructions" minOccurs="0"/>
       <xs:element type="xs:string" name="elevation" minOccurs="0"/>
+      <xs:element type="xs:string" name="system-message" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="metadataType">
@@ -47,6 +48,7 @@
       <xs:element type="ors:copyrightType" name="copyright" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
       <xs:element type="xs:string" name="time"/>
       <xs:element type="ors:boundsType" name="bounds" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
+      <xs:element type="ors:extensionsType" name="extensions" xmlns:ors="https://raw.githubusercontent.com/GIScience/openrouteservice-schema/master/gpx/v1/ors-gpx.xsd"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="boundsType">
